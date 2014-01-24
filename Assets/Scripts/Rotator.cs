@@ -8,7 +8,7 @@ public class Rotator : MonoBehaviour {
 
 	void Start () 
 	{
-		if( rotateBackwards == true )
+		if( rotateBackwards )
 			rotationAngle = rotationAngle * -1;
 	}
 	
