@@ -1199,6 +1199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1494693de092ed04bb14d1023579e21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleDelayMin: .150000006
+  scaleDelayMax: .5
 --- !u!4 &1218155513
 Transform:
   m_ObjectHideFlags: 0

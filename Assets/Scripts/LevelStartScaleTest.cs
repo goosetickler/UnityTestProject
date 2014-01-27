@@ -4,7 +4,8 @@ using System.Collections;
 public class LevelStartScaleTest : MonoBehaviour {
 
 	private GameObject[] levelObjects;
-
+	public float scaleDelayMin;
+	public float scaleDelayMax;
 	// Use this for initialization
 	void Start () 
 	{
@@ -31,7 +32,7 @@ public class LevelStartScaleTest : MonoBehaviour {
 
 	private IEnumerator ResetObjectScale( GameObject obj, Vector3 scale )
 	{
-		yield return new WaitForSeconds(Random.Range(0.1f, 0.25f));
-		iTween.ScaleTo( obj, scale, 1.5f);
+		yield return new WaitForSeconds(Random.Range(scaleDelayMin, scaleDelayMax));
+		iTween.ScaleTo( obj, scale, 2f);
 	}
 }
