@@ -17,7 +17,7 @@ public class LevelStartScaleTest : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-	
+		//this is where stuff would be done.
 	}
 
 	void ScaleGameObjects( GameObject[] Objects )
@@ -30,6 +30,7 @@ public class LevelStartScaleTest : MonoBehaviour {
 		}
 	}
 
+	//co routines are the coolest
 	private IEnumerator ResetObjectScale( GameObject obj, Vector3 scale )
 	{
 		yield return new WaitForSeconds(Random.Range(scaleDelayMin, scaleDelayMax));
