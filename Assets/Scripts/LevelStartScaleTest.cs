@@ -22,6 +22,7 @@ public class LevelStartScaleTest : MonoBehaviour {
 
 	void ScaleGameObjects( GameObject[] Objects )
 	{
+		//Save the current scaele and then reset the scale of all gameObjects down to 0
 		foreach (GameObject obj in Objects) 
 		{
 			Vector3 currentScale = obj.transform.localScale;
