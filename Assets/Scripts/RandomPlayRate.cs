@@ -11,8 +11,8 @@ public class RandomPlayRate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float RandomDelay = Random.Range(.25f, .85f );
-		if( !IsInvoking())
+		float RandomDelay = Random.Range(.25f, 1.85f );
+		if( !IsInvoking("adjustAnimPlayRate"))
 			Invoke( "adjustAnimPlayRate", RandomDelay );
 	}
 
