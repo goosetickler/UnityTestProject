@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMargin: 2
   yMargin: 2
-  xSmooth: 2
+  xSmooth: 8
   ySmooth: 2
   xCamOffset: 1.5
   yCamOffset: 0
