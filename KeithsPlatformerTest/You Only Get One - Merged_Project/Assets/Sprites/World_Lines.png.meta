@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: f28b3a67a527e8942b236b40593309eb
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: World_Lines_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 637
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: World_Lines_1
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 12
+        height: 754
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: World_Lines_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 493
+        width: 105
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+    - name: World_Lines_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 402
+        width: 274
+        height: 12
+      alignment: 4
+      pivot: {x: 0, y: .5}
+    - name: World_Lines_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 754
+        height: 12
+      alignment: 4
+      pivot: {x: 0, y: .5}
+    - name: World_Lines_5
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 62
+        width: 12
+        height: 274
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: World_Lines_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 30
+        width: 353
+        height: 210
+      alignment: 8
+      pivot: {x: 1, y: 0}
+    - name: World_Lines_7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 30
+        width: 353
+        height: 211
+      alignment: 6
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
