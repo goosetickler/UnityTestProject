@@ -10,6 +10,9 @@ public class SwitchLogic : MonoBehaviour {
 	private bool isPlayerTouching=false;
 	private bool isFullyPressed=false;
 
+	public GameObject[] Lights;
+	public GameObject[] Movers;
+
 	// Use this for initialization
 	void Start () {
 		playerGameObject = GameObject.Find("Player");
@@ -26,10 +29,21 @@ public class SwitchLogic : MonoBehaviour {
 		{
 			isFullyPressed = true;
 			physics.velocity.y= 0f;
-			Debug.Log("IsFullyPressed");
+			ActivateLinkedObjects();
 		}
 		else
 			physics.velocity.y= 0f;
+	}
+
+	void ActivateLinkedObjects()
+	{
+		if( Movers.Length > 0 )
+		{
+			foreach (var Mover in Movers) 
+			{
+				Mover.GetComponent<MoverLogic>().ActivateMover = true;
+			}
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){

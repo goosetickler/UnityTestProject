@@ -85,6 +85,10 @@ public class SpritePhysics : MonoBehaviour {
 	public bool RegisterMovement = true;
 	[HideInInspector]
 	public bool TopOfWallClimb = true;
+	[HideInInspector]
+	public bool isTouchingMovingPlatform = false;
+	[HideInInspector]
+	public Vector2 moverVelocity;
 
 	private Vector2 FrontAlign;
 	private Vector2 BackAlign;
@@ -176,6 +180,7 @@ public class SpritePhysics : MonoBehaviour {
 		//apply movement
 		Vector2 tempPosition = new Vector2((transform.position.x +(velocity.x*60) *Time.deltaTime),transform.position.y + (velocity.y*60) *Time.deltaTime);
 		transform.position = tempPosition;
+
 
 		//align to ground and slope properly after physics calculations have completed.
 		AlignToWalls();

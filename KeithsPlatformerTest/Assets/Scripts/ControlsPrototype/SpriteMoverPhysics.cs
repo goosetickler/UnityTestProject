@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class SpriteMoverPhysics : MonoBehaviour {
 	
 	public Vector2 velocity;
-	public Vector2 maxVelocity = new Vector2(.1f,.2f);
+	public Vector2 maxVelocity = new Vector2(.1f,.1f);
 	public float gravity=0.0f;
 	public Vector2 drag = new Vector2(100f,0);
 	public bool isStatic = false;
