@@ -143,17 +143,14 @@ public class MoverLogic : MonoBehaviour {
 
 		if(ActivateMover==true)	
 		{
-			playerGameObject.transform.parent = transform;
+			//playerGameObject.transform.parent = transform;
 			playerGameObject.GetComponent<SpritePhysics>().isTouchingMovingPlatform = true;
 		}
 	}
 
-	void OnTriggerStay2D(Collider2D collider){
-	}
-
 	void OnTriggerExit2D(Collider2D collider){
 		Debug.Log("SomethingIsNotTouching");
-		playerGameObject.transform.parent = null;
+		//playerGameObject.transform.parent = null;
 		playerGameObject.GetComponent<SpritePhysics>().isTouchingMovingPlatform = false;
 	}
 }

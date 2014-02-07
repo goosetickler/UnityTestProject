@@ -103,7 +103,7 @@ public class SpriteMoverPhysics : MonoBehaviour {
 		
 		RayTraceFront();
 		RayTraceBack();
-
+	
 		//handle front and back collisions
 		if(isBack == true  && velocity.x<0.0f)
 			velocity.x=0;
@@ -111,14 +111,16 @@ public class SpriteMoverPhysics : MonoBehaviour {
 			velocity.x=0;
 		if(isCeiling == true && velocity.y>0.0f)
 			velocity.y=0;
-
+	
 		ApplyDrag();
 		ApplyGravity();
 		ClampVelocity();
-		
+			
 		//apply movement
-		Vector2 tempPosition = new Vector2((transform.position.x +(velocity.x*60) *Time.deltaTime),transform.position.y + (velocity.y*60) *Time.deltaTime);
-		transform.position = tempPosition;
+		if(velocity.x!=0f||velocity.y!=0f)
+			transform.Translate((velocity*60)*Time.deltaTime);
+		//Vector2 tempPosition = new Vector2((transform.position.x +(velocity.x*60) *Time.deltaTime),transform.position.y + (velocity.y*60) *Time.deltaTime);
+		//transform.position = tempPosition;
 	}
 	
 	void RayTraceGround()

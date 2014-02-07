@@ -29,6 +29,7 @@ public class GravityVolumes : MonoBehaviour {
 		StartCoroutine(DelayCenterGravityVolume());
 		Debug.Log ("enter");
 	}
+
 	void OnTriggerExit2D (Collider2D col) 
 	{ 
 		//remove what we just exited

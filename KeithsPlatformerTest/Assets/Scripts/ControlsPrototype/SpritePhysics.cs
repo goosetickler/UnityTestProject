@@ -178,8 +178,9 @@ public class SpritePhysics : MonoBehaviour {
 		ClampVelocity();
 
 		//apply movement
-		Vector2 tempPosition = new Vector2((transform.position.x +(velocity.x*60) *Time.deltaTime),transform.position.y + (velocity.y*60) *Time.deltaTime);
-		transform.position = tempPosition;
+		transform.Translate((velocity*60)*Time.deltaTime);
+		//Vector2 tempPosition = new Vector2((transform.position.x +(velocity.x*60) *Time.deltaTime),transform.position.y + (velocity.y*60) *Time.deltaTime);
+		//transform.position = tempPosition;
 
 
 		//align to ground and slope properly after physics calculations have completed.

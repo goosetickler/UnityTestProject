@@ -46,24 +46,19 @@ public class SwitchLogic : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D collider){
-		Debug.Log("SomethingIsTouching");
-		if(collider.gameObject == playerGameObject)
+	void OnTriggerEnter2D (Collider2D col) 
+	{ 
+		Debug.Log ("TOUCHINGTEST!!");
+
+		if(col.gameObject == playerGameObject)
 		{
 			Debug.Log("ItsThePlayer");
 			isPlayerTouching = true;
 		}
 	}
 	
-	void OnTriggerExit2D(Collider2D collider)
-	{
-		Debug.Log("SomethingIsNotTouching");
+	void OnTriggerExit2D (Collider2D col) 
+	{ 
+		Debug.Log("UNTOUCHTEST!!!");
 	}
-
-	void OnCollisionExit2D(Collision2D collider)
-	{
-		Debug.Log("SomethingIsNotTouching");
-	}
-
-
 }
